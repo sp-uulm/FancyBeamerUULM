@@ -1,0 +1,11 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  LATEX_IMAGE: registry.gitlab.com/islandoftex/images/texlive:TL2025-2025-08-24-full
+
+build-pdf:
+  image: $LATEX_IMAGE
+  script:
+    - latexmk -pdf demo-slides/demo-slides.tex
+  artifacts:
+    paths:
+      - "demo-slides.pdf"
