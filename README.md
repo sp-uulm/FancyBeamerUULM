@@ -2,6 +2,15 @@
 
 [![Static Badge](https://img.shields.io/badge/LaTeX-Inside-blue?style=for-the-badge&labelColor=darkorange&color=white)](https://www.latex-project.org/) [![Static Badge](https://img.shields.io/badge/SP-Institute-blue?style=for-the-badge&labelColor=%23A32638&color=white)](https://www.uni-ulm.de/in/sp/)
 
+## Mirrors
+This repository is available at the following locations:
+- Main repo: https://gitlab.uni-ulm.de/sp/sp-thesis-package/latex/presentation (login required).
+- Mirror 1: https://github.com/sp-uulm/FancyBeamerUULM
+- Mirror 2: https://spgit.informatik.uni-ulm.de/teaching/sp-thesis-package/latex/presentation (login required)
+
+The mirrors allow for forking on github or internal gitlab. 
+
+## Introduction
 This is a university specific specialization of the [FancyBeamer](https://github.com/SEatUPB/FancyBeamer) template.
 While this fork does not add any specific (/fancy) features, [`fancyuulm.sty`](fancyuulm.sty) applies the color palette of Ulm University to the template.
 Additionally, [`logos/`](logos/) contains the official logo of Ulm University as well as the logo of the Institute of Software Engineering and Programming Languages&nbsp;(SP) maintaining this fork.
@@ -27,7 +36,7 @@ There are two main ways to use this template: clone-and-own and using it as a su
 
 For this you may download the repository as a ZIP file (using either the [main version](https://github.com/sp-uulm/FancyBeamerUULM/archive/refs/heads/main.zip) or the [latest release](https://github.com/sp-uulm/FancyBeamerUULM/releases/latest)).
 
-Afterward, unpack the ZIP file to the desired directory and can start with using the template (see the [base template](https://github.com/SEatUPB/FancyBeamer)) We recommend you to copy the [empty slides](empty-slides/empty-slides.tex) to your root directory to start your own presentation.
+Afterward, unpack the ZIP file to the desired directory and start with using the template (see the [base template](https://github.com/SEatUPB/FancyBeamer)) We recommend you to copy the [empty slides](empty-slides/empty-slides.tex) to your root directory to start your own presentation.
 In general, you neither need the [`demo-slides/`](demo-slides/) nor the [`empty-slides/`](empty-slides/) folder for your presentation so you can safely remove them.
 
 ### 🔗 Submodule (e.g., for a Git Repository)
