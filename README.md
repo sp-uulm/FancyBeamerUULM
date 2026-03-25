@@ -8,7 +8,7 @@ Please refer to the underlying [FancyBeamer template][FancyBeamer] for documenta
 
 This repository is available at the following locations:
 
-- Main repo: <https://gitlab.uni-ulm.de/sp/sp-thesis-package/latex/presentation> (login required).
+- Main repo: <https://gitlab.uni-ulm.de/sp/sp-thesis-package/latex/presentation> (login required)
 - Mirror 1: <https://github.com/sp-uulm/FancyBeamerUULM>
 - Mirror 2: <https://spgit.informatik.uni-ulm.de/teaching/sp-thesis-package/latex/presentation> (login required)
 
