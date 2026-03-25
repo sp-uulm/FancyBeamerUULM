@@ -115,6 +115,9 @@
 % frame layout
 % ---------------------------------------------
 
+\def\fancy@titlefooter@transparency{1}
+\def\settitlefootertransparency#1{\def\fancy@titlefooter@transparency{#1}}
+
 % we use this flag as a helper to toggle extra behavior when constructing the logos
 \newif\iffancy@logos@first@
 
@@ -150,15 +153,16 @@
             \ifx \insertdate \empty \else \insertdate \fi
         \end{beamercolorbox}%
         \nointerlineskip
+        \ifdim\fancy@titlefooter@transparency\p@=\p@\else\pgfsetfillopacity{\fancy@titlefooter@transparency}\fi
         \begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,dp=2ex,leftskip=\fancy@titlepage@margin,rightskip=\fancy@titlepage@margin]{logobox}
-            \vspace{-1ex}%
+            \ifdim\fancy@titlefooter@transparency\p@=\p@\else\pgfsetfillopacity{1}\fi\vspace{-1ex}%
             \fancy@logoline
         \end{beamercolorbox}%
     \end{frame}
     }
 }
 
-\renewcommandx{\maketitle}[2][1=apr21-o25a,2=0]{
+\renewcommandx{\maketitle}[2][1=example-image,2=0]{
     \gdef\fancytitlepicture{#1}
     \gdef\fancytitlepictureoffset{#2}
     \@createtitleslide
@@ -695,9 +699,9 @@
 % ---------------------------------------------
 % GRAPHICSPATH
 \makeatletter
-\newcommand{\setpaths}[1]{
+\newcommand*{\setpaths}[1]{
 	\appto\Ginput@path{#1} % for loading pictures
-	\def\input@path{#1} % for loading picture sources
+	\appto\input@path{#1} % for loading picture sources
 }
 \makeatother
 
